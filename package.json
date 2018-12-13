@@ -1,0 +1,31 @@
+{
+  "name": "flint",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "yarn copy-assets && yarn build",
+    "copy-assets": "node copy-static-assets.js",
+    "build": "parcel src/popup.html src/options.html src/background.html src/login.html"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.6.2",
+    "@material-ui/icons": "^3.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "parcel-bundler": "^1.10.3",
+    "postcss-modules": "^1.4.1",
+    "react-hot-loader": "^4.3.12",
+    "react-router": "^4.3.1"
+  }
+}
